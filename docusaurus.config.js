@@ -3,7 +3,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "Sui Docs",
+  title: "Sui Documentation",
   tagline:
     "Sui is a next-generation smart contract platform with high throughput, low latency, and an asset-oriented programming model powered by Move",
   favicon: "img/favicon.ico",
@@ -38,7 +38,7 @@ const config = {
     ({
       image: "img/docusaurus-social-card.jpg",
       navbar: {
-        title: "Sui Docs",
+        title: "Sui Documentation",
         logo: {
           alt: "Sui Docs Logo",
           src: "img/logo.svg",
@@ -70,6 +70,27 @@ const config = {
         style: "dark",
         links: [
           {
+            title: "Documentation",
+            items: [
+              {
+                label: "Learn",
+                href: "https://docs.sui.io/learn",
+              },
+              {
+                label: "Build",
+                href: "https://docs.sui.io/build",
+              },
+              {
+                label: "Contribute",
+                href: "https://docs.sui.io/contribute",
+              },
+              {
+                label: "Reference",
+                href: "https://docs.sui.io/reference",
+              },
+            ],
+          },
+          {
             title: "Resources",
             items: [
               {
@@ -86,26 +107,26 @@ const config = {
             title: "Community",
             items: [
               {
-                label: "Developer Forum",
+                label: "Forums",
                 href: "https://forums.sui.io/",
-              },
-              {
-                label: "Discord",
-                href: "https://discord.gg/sui",
               },
               {
                 label: "Twitter",
                 href: "https://twitter.com/SuiNetwork",
               },
-            ],
-          },
-          {
-            title: "More",
-            items: [
               {
                 label: "GitHub",
                 href: "https://github.com/MystenLabs/sui",
               },
+              {
+              label: "Telegram",
+              href: "https://t.me/+mODLY50r0BEyM2Ux",
+              },
+              {
+                label: "Discord",
+                href: "https://discord.gg/sui",
+              },
+
             ],
           },
         ],
