@@ -133,7 +133,7 @@ const config = {
             ],
           },
         ],
-        copyright: `© ${new Date().getFullYear()} Sui Foundation | Documentation Distributed under <a href="https://github.com/sui-foundation/sui-docs/blob/main/LICENSE">CC BY 4.0</a>`
+        copyright: `© ${new Date().getFullYear()} Sui Foundation | Documentation distributed under <a href="https://github.com/sui-foundation/sui-docs/blob/main/LICENSE">CC BY 4.0</a>`
       },
       prism: {
         theme: lightCodeTheme,
