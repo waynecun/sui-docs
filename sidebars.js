@@ -103,9 +103,9 @@ const sidebars = {
         'build/program-with-objects/object-basics',
         'build/program-with-objects/using-objects',
         'build/program-with-objects/immutable-objects',
-        'build/program-with-objects/write-move-packages',
-        'build/program-with-objects/build-and-test',
-        'build/program-with-objects/debug-and-publish',
+        'build/program-with-objects/object-wrapping',
+        'build/program-with-objects/dynamic-fields',
+        'build/program-with-objects/collections',
       ],
     },
     {
