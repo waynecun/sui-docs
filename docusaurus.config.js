@@ -24,6 +24,7 @@ const config = {
         docs: {
           routeBasePath: "/",
           sidebarPath: require.resolve("./sidebars.js"),
+          sidebarCollapsed: false,
           editUrl: "https://github.com/sui-foundation/sui-docs/tree/main/",
         },
         theme: {
@@ -49,13 +50,18 @@ const config = {
         items: [
           {
             type: "doc",
-            docId: "learn/about-sui/sui-glossary",
+            docId: "learn/about-sui/about-sui",
             label: "Learn",
           },
           {
             type: "doc",
-            docId: "build/setup/install-sui",
+            docId: "build/create-smart-contracts/move-toml",
             label: "Build",
+          },
+          {
+            type: "doc",
+            docId: "node/setup/install-sui",
+            label: "Node",
           },
           {
             type: "doc",
@@ -66,6 +72,23 @@ const config = {
             type: "doc",
             docId: "contribute/improve-documentation",
             label: "Contribute",
+          },
+          {
+            type: "dropdown",
+            docId: "More",
+            label: "More",
+            items: [
+              {
+                type: "doc",
+                docId: "other/economics/sui-token",
+                label: "Economy",
+              },
+              {
+                type: "doc",
+                docId: "other/cryptography/keys-and-addresses",
+                label: "Cryptography",
+              }
+            ]
           },
         ],
       },
@@ -138,6 +161,7 @@ const config = {
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
+        additionalLanguages: ['rust'],
       },
     }),
 };
