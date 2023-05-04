@@ -146,6 +146,7 @@ const sidebars = {
         'contribute/run-fullnode',
         'contribute/run-validator',
         'contribute/code-of-conduct',
+        'contribute/contribution-process',
       ],
     },
   ],
