@@ -7,7 +7,7 @@ const config = {
   tagline:
     "Sui is a next-generation smart contract platform with high throughput, low latency, and an asset-oriented programming model powered by Move",
   favicon: "img/favicon.ico",
-  url: "https://sui-docs-sui-foundation.vercel.app/",
+  url: "https://sui-docs-sui-foundation.vercel.app",
   baseUrl: "/",
   onBrokenLinks: "warn",
   onBrokenMarkdownLinks: "warn",
