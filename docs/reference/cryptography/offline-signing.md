@@ -1,4 +1,4 @@
 ---
-title: Sui Offline Signing
+title: Offline Signing
 slug: /offline-signing
 ---

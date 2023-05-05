@@ -1,4 +1,4 @@
 ---
-title: Sui Multisig
+title: Multisig
 slug: /multisig
 ---

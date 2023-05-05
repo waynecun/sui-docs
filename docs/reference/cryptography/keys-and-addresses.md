@@ -1,4 +1,4 @@
 ---
-title: Sui Keys and Addresses
+title: Keys and Addresses
 slug: /keys-and-addresses
 ---

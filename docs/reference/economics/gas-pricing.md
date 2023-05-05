@@ -1,4 +1,4 @@
 ---
-title: Sui Gas Pricing
+title: Gas Pricing
 slug: /gas-pricing
 ---

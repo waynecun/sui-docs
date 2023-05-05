@@ -1,4 +1,4 @@
 ---
-title: Sui Gas Changes
+title: Gas Changes
 slug: /gas-changes
 ---

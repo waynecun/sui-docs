@@ -1,4 +1,4 @@
 ---
-title: Sui Security
+title: Security
 slug: /sui-security
 ---
