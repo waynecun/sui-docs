@@ -1,4 +1,4 @@
 ---
-title: Sui Local Network
+title: Local Network
 slug: /local-network
 ---

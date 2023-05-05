@@ -49,18 +49,50 @@ const config = {
         items: [
           {
             type: "doc",
-            docId: "learn/about-sui/sui-glossary",
+            docId: "learn/about-sui/about-sui",
             label: "Learn",
           },
           {
             type: "doc",
-            docId: "build/setup/install-sui",
+            docId: "build/quickstart/about",
             label: "Build",
           },
           {
-            type: "doc",
-            docId: "reference/sui-json-format",
+            type: "dropdown",
+            docId: "Reference",
             label: "Reference",
+            items: [
+              {
+                type: "doc",
+                docId: "reference/sui-framework/sui-framework-reference",
+                label: "Sui Framework",
+              },
+              {
+                type: "doc",
+                docId: "reference/core-concepts/sui-compared",
+                label: "Core Concepts",
+              },
+              {
+                type: "doc",
+                docId: "reference/economics/sui-token",
+                label: "Economics",
+              },
+              {
+                type: "doc",
+                docId: "reference/cryptography/keys-and-addresses",
+                label: "Cryptography",
+              },
+              {
+                type: "doc",
+                docId: "reference/json-rpc/json-rpc-api",
+                label: "JSON-RPC",
+              },
+              {
+                type: "doc",
+                docId: "reference/sdk/ts-js-sdk",
+                label: "SDK's",
+              },
+            ]
           },
           {
             type: "doc",
@@ -138,6 +170,7 @@ const config = {
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
+        additionalLanguages: ['rust'],
       },
     }),
 };

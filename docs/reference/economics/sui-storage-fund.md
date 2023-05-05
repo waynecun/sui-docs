@@ -1,4 +1,4 @@
 ---
-title: Sui Storage Fund
+title: Storage Fund
 slug: /storage-fund
 ---
