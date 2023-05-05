@@ -1,4 +1,4 @@
 ---
-title: Sui Compared to Other Blockchains
+title: Sui Comparison
 slug: /sui-comparison
 ---

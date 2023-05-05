@@ -24,7 +24,6 @@ const config = {
         docs: {
           routeBasePath: "/",
           sidebarPath: require.resolve("./sidebars.js"),
-          sidebarCollapsed: false,
           editUrl: "https://github.com/sui-foundation/sui-docs/tree/main/",
         },
         theme: {
@@ -55,40 +54,50 @@ const config = {
           },
           {
             type: "doc",
-            docId: "build/create-smart-contracts/move-toml",
+            docId: "build/quickstart/about",
             label: "Build",
           },
           {
-            type: "doc",
-            docId: "node/setup/install-sui",
-            label: "Node",
-          },
-          {
-            type: "doc",
-            docId: "reference/sui-json-format",
+            type: "dropdown",
+            docId: "Reference",
             label: "Reference",
+            items: [
+              {
+                type: "doc",
+                docId: "reference/sui-framework/sui-framework-reference",
+                label: "Sui Framework",
+              },
+              {
+                type: "doc",
+                docId: "reference/core-concepts/sui-compared",
+                label: "Core Concepts",
+              },
+              {
+                type: "doc",
+                docId: "reference/economics/sui-token",
+                label: "Economics",
+              },
+              {
+                type: "doc",
+                docId: "reference/cryptography/keys-and-addresses",
+                label: "Cryptography",
+              },
+              {
+                type: "doc",
+                docId: "reference/json-rpc/json-rpc-api",
+                label: "JSON-RPC",
+              },
+              {
+                type: "doc",
+                docId: "reference/sdk/ts-js-sdk",
+                label: "SDK's",
+              },
+            ]
           },
           {
             type: "doc",
             docId: "contribute/improve-documentation",
             label: "Contribute",
-          },
-          {
-            type: "dropdown",
-            docId: "More",
-            label: "More",
-            items: [
-              {
-                type: "doc",
-                docId: "other/economics/sui-token",
-                label: "Economy",
-              },
-              {
-                type: "doc",
-                docId: "other/cryptography/keys-and-addresses",
-                label: "Cryptography",
-              }
-            ]
           },
         ],
       },

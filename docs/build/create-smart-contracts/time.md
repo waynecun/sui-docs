@@ -1,5 +1,5 @@
 ---
-title: Accessing Time in Sui Move
+title: Accessing Time
 slug: /time
 ---
 

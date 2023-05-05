@@ -1,4 +1,4 @@
 ---
-title: Sui Intent Signing
+title: Intent Signing
 slug: /intent-signing
 ---

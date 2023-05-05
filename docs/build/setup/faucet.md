@@ -1,4 +1,4 @@
 ---
-title: Sui Faucet
+title: Faucet
 slug: /faucet
 ---

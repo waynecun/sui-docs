@@ -9,26 +9,26 @@ const sidebars = {
         'learn/about-sui/about-sui',
         'learn/about-sui/why-move',
         'learn/about-sui/how-sui-move-differs',
-        // 'learn/about-sui/sui-security',
       ],
     },
     {
       type: 'category',
-      label: 'Getting started',
+      label: 'Getting Started',
+      collapsible: false,
       items: [
         {
           type: 'link',
-          label: 'Dive into Sui fundamentals',
+          label: 'Sui Core Concepts',
           href: '/sui-comparison',
         },
         {
           type: 'link',
-          label: 'Connect to Sui wallet',
-          href: '/faucet',
+          label: 'Connect to Sui',
+          href: '/connect-to-a-network',
         },
         {
           type: 'link',
-          label: 'Move quickstart',
+          label: 'Move Quickstart',
           href: '/about-sui-move',
         },
         {
@@ -37,9 +37,14 @@ const sidebars = {
           href: '/tutorials',
         },
         {
-        type: 'link',
-          label: 'Runnin a node',
-          href: '/running-node',
+          type: 'link',
+          label: 'Exchange Integration',
+          href: '/exchange-integration-guide',
+        },
+        {
+          type: 'link',
+          label: 'Running a Node on Sui',
+          href: '/full-node',
         },
         {
           type: 'link',
@@ -49,46 +54,43 @@ const sidebars = {
       ],
     },
   ],
-  nodeSidebar: [
-    {
-      type: "doc",
-      id: "node/running-node",
-      label: "Run a node",
-    },
-    {
-      type: 'category',
-      label: 'setup',
-      items: [
-        'node/setup/install-sui',
-        'node/setup/client-cli',
-      ],
-    },
-    {
-      type: 'category',
-      label: 'nodes',
-      items: [
-        'node/nodes/full-node',
-        'node/nodes/validator',
-        'node/nodes/database-snapshots',
-        'node/nodes/logging',
-      ],
-    },
-  ],
   buildSidebar: [
     {
       type: 'category',
       label: 'Quickstart',
       items: [
-        'build/create-smart-contracts/about',
-        'build/create-smart-contracts/write-move-packages',
-        'build/create-smart-contracts/build-and-test',
-        'build/create-smart-contracts/debug-and-publish',
+        'build/quickstart/about',
+        'build/quickstart/examples',
+        'build/quickstart/tutorials',
+        'build/quickstart/exchange-integration-guide',
         ],
     },
     {
       type: 'category',
-      label: 'Create Smart Contracts with Move',
+      label: 'Environment setup',
       items: [
+        'build/setup/connect-to-a-network',
+        'build/setup/faucet',
+        'build/setup/local-network',
+        'build/setup/gas-changes',
+        'build/setup/object-display-standard',
+        {
+          type: 'category',
+          label: 'Setup the CLI',
+          items: [
+            'contribute/setup/install-sui',
+            'contribute/setup/client-cli',
+          ],
+        },
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Smart Contracts with Move',
+      items: [
+        'build/create-smart-contracts/write-move-packages',
+        'build/create-smart-contracts/build-and-test',
+        'build/create-smart-contracts/debug-and-publish',
         'build/create-smart-contracts/move-toml',
         'build/create-smart-contracts/move-lock',
         'build/create-smart-contracts/time',
@@ -122,31 +124,14 @@ const sidebars = {
         'build/setup/gas-changes',
         'build/setup/object-display-standard',
       ],
-    },
-    {
-      type: 'category',
-      label: 'Interact With Sui',
-      items: [
-        'build/interact-with-sui/json-rpc-api',
-        'build/interact-with-sui/rust-sdk',
-        'build/interact-with-sui/ts-js-sdk',
-        'build/interact-with-sui/event-query-and-subscription',
-        'build/interact-with-sui/programmable-tx-blocks',
-      ],
-    },
+    }
   ],
   referenceSidebar: [
     {
       type: 'category',
-      label: 'Reference',
+      label: 'Sui Framework',
       items: [
-        'reference/sui-security',
-        'reference/sui-json-format',
-        'reference/sui-framework-reference',
-        'reference/exchange-integration-guide',
-        'reference/tutorials',
-        'reference/examples',
-        'reference/sui-json-rpc',
+        'reference/sui-framework/sui-framework-reference',
       ],
     },
     {
@@ -161,6 +146,48 @@ const sidebars = {
         'reference/core-concepts/single-writer-apps',
         'reference/core-concepts/validators',
         'reference/core-concepts/consensus-engine',
+        'reference/core-concepts/event-query-and-subscription',
+        'reference/core-concepts/programmable-tx-blocks',
+        'reference/core-concepts/sui-security',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Economics',
+      items: [
+        'reference/economics/sui-token',
+        'reference/economics/gas-pricing',
+        'reference/economics/gas-in-sui',
+        'reference/economics/sui-storage-fund',
+        'reference/economics/proof-of-stake',
+        'reference/economics/tokenomics-whitepaper',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Cryptography',
+      items: [
+        'reference/cryptography/intent-signing',
+        'reference/cryptography/offline-signing',
+        'reference/cryptography/multisig',
+        'reference/cryptography/keys-and-addresses',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'JSON-RPC',
+      items: [
+        'reference/json-rpc/sui-json-format',
+        'reference/json-rpc/sui-json-rpc',
+        'reference/json-rpc/json-rpc-api',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'SDKs',
+      items: [
+        'reference/sdk/rust-sdk',
+        'reference/sdk/ts-js-sdk',
       ],
     },
   ],
@@ -173,37 +200,21 @@ const sidebars = {
         'contribute/contribute-to-sui-repos',
         'contribute/submit-a-sip',
         'contribute/localize-sui-docs',
-        'contribute/run-fullnode',
-        'contribute/run-validator',
         'contribute/code-of-conduct',
         'contribute/contribution-process',
       ],
     },
+    {
+      type: 'category',
+      label: 'Run a node on Sui',
+      items: [
+        'contribute/nodes/full-node',
+        'contribute/nodes/validator',
+        'contribute/nodes/database-snapshots',
+        'contribute/nodes/logging',
+      ],
+    },
   ],
-  otherSidebar: [
-    {
-      type: 'category',
-      label: 'Economics',
-      items: [
-        'other/economics/sui-token',
-        'other/economics/gas-pricing',
-        'other/economics/gas-in-sui',
-        'other/economics/sui-storage-fund',
-        'other/economics/proof-of-stake',
-        'other/economics/tokenomics-whitepaper',
-      ],
-    },
-    {
-      type: 'category',
-      label: 'Cryptography',
-      items: [
-        'other/cryptography/intent-signing',
-        'other/cryptography/offline-signing',
-        'other/cryptography/multisig',
-        'other/cryptography/keys-and-addresses',
-      ],
-    },
-  ]
 };
 
 module.exports = sidebars;

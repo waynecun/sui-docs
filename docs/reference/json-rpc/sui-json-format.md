@@ -1,4 +1,4 @@
 ---
-title: SUI JSON Format
+title: JSON Format
 slug: /sui-json-format
 ---
