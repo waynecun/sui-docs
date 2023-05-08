@@ -19,7 +19,7 @@ const sidebars = {
         {
           type: 'link',
           label: 'Sui Core Concepts',
-          href: '/sui-comparison',
+          href: '/objects',
         },
         {
           type: 'link',
@@ -35,11 +35,6 @@ const sidebars = {
           type: 'link',
           label: 'Tic Tac Toe in Move',
           href: '/tutorials',
-        },
-        {
-          type: 'link',
-          label: 'Exchange Integration',
-          href: '/exchange-integration-guide',
         },
         {
           type: 'link',
@@ -62,7 +57,6 @@ const sidebars = {
         'build/quickstart/about',
         'build/quickstart/examples',
         'build/quickstart/tutorials',
-        'build/quickstart/exchange-integration-guide',
         ],
     },
     {
@@ -111,19 +105,6 @@ const sidebars = {
         'build/program-with-objects/dynamic-fields',
         'build/program-with-objects/collections',
       ],
-    },
-    {
-      type: 'category',
-      label: 'Environment setup',
-      items: [
-//        'build/setup/install-sui',
-        'build/setup/connect-to-a-network',
-//        'build/setup/client-cli',
-        'build/setup/faucet',
-        'build/setup/local-network',
-        'build/setup/gas-changes',
-        'build/setup/object-display-standard',
-      ],
     }
   ],
   referenceSidebar: [
@@ -132,13 +113,13 @@ const sidebars = {
       label: 'Sui Framework',
       items: [
         'reference/sui-framework/sui-framework-reference',
+        'reference/sui-framework/exchange-integration-guide',
       ],
     },
     {
       type: 'category',
       label: 'Core concepts',
       items: [
-        'reference/core-concepts/sui-compared',
         'reference/core-concepts/objects',
         'reference/core-concepts/object-and-package-versioning',
         'reference/core-concepts/transactions',
@@ -149,6 +130,7 @@ const sidebars = {
         'reference/core-concepts/event-query-and-subscription',
         'reference/core-concepts/programmable-tx-blocks',
         'reference/core-concepts/sui-security',
+        'reference/core-concepts/sui-compared',
       ],
     },
     {
@@ -167,10 +149,10 @@ const sidebars = {
       type: 'category',
       label: 'Cryptography',
       items: [
+        'reference/cryptography/keys-and-addresses',
         'reference/cryptography/intent-signing',
         'reference/cryptography/offline-signing',
         'reference/cryptography/multisig',
-        'reference/cryptography/keys-and-addresses',
       ],
     },
     {

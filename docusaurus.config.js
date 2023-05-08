@@ -53,9 +53,31 @@ const config = {
             label: "Learn",
           },
           {
-            type: "doc",
+            type: "dropdown",
             docId: "build/quickstart/about",
             label: "Build",
+            items: [
+              {
+                type: "doc",
+                docId: "build/quickstart/about",
+                label: "Quickstart",
+              },
+              {
+                type: "doc",
+                docId: "build/setup/connect-to-a-network",
+                label: "Envrionment setup",
+              },
+              {
+                type: "doc",
+                docId: "build/create-smart-contracts/write-move-packages",
+                label: "Smart Contracts with Move",
+              },
+              {
+                type: "doc",
+                docId: "build/program-with-objects/object-basics",
+                label: "Program with Objects",
+              },
+            ]
           },
           {
             type: "dropdown",
@@ -90,14 +112,26 @@ const config = {
               {
                 type: "doc",
                 docId: "reference/sdk/ts-js-sdk",
-                label: "SDK's",
+                label: "SDKs",
               },
             ]
           },
           {
-            type: "doc",
+            type: "dropdown",
             docId: "contribute/improve-documentation",
             label: "Contribute",
+            items: [
+              {
+                type: "doc",
+                docId: "contribute/improve-documentation",
+                label: "Improve Documentation",
+              },
+              {
+                type: "doc",
+                docId: "contribute/nodes/full-node",
+                label: "Run a node on Sui",
+              },
+            ]
           },
         ],
       },
