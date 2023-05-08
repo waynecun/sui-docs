@@ -91,12 +91,12 @@ const config = {
               },
               {
                 type: "doc",
-                docId: "reference/core-concepts/objects",
+                docId: "reference/core-concepts/how-sui-works",
                 label: "Core Concepts",
               },
               {
                 type: "doc",
-                docId: "reference/economics/sui-token",
+                docId: "reference/economics/sui-tokenomics",
                 label: "Economics",
               },
               {
