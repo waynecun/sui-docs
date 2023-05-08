@@ -72,8 +72,8 @@ const sidebars = {
           type: 'category',
           label: 'Setup the CLI',
           items: [
-            'contribute/setup/install-sui',
-            'contribute/setup/client-cli',
+            'build/setup/cli/install-sui',
+            'build/setup/cli/client-cli',
           ],
         },
       ],
@@ -114,6 +114,9 @@ const sidebars = {
       items: [
         'reference/sui-framework/sui-framework-reference',
         'reference/sui-framework/exchange-integration-guide',
+        'reference/sui-framework/sui-security',
+        'reference/sui-framework/sui-compared',
+        'reference/sui-framework/sui-glossary',
       ],
     },
     {
@@ -129,8 +132,6 @@ const sidebars = {
         'reference/core-concepts/consensus-engine',
         'reference/core-concepts/event-query-and-subscription',
         'reference/core-concepts/programmable-tx-blocks',
-        'reference/core-concepts/sui-security',
-        'reference/core-concepts/sui-compared',
       ],
     },
     {

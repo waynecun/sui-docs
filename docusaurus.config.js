@@ -91,7 +91,7 @@ const config = {
               },
               {
                 type: "doc",
-                docId: "reference/core-concepts/sui-compared",
+                docId: "reference/core-concepts/objects",
                 label: "Core Concepts",
               },
               {
