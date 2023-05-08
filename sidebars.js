@@ -173,6 +173,34 @@ const sidebars = {
         'reference/sdk/ts-js-sdk',
       ],
     },
+    {
+      type: 'category',
+      label: 'Sui Wallet Kit',
+      items: [
+        'reference/sui-wallet-kit/introduction',
+        'reference/sui-wallet-kit/getting-started',
+        {
+          type: 'category',
+          label: 'API',
+          items: [
+            'reference/sui-wallet-kit/wallet-kit-provider',
+            'reference/sui-wallet-kit/connect-button',
+            'reference/sui-wallet-kit/use-wallet-kit',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Advanced',
+          items: [
+            'reference/sui-wallet-kit/programmatic-connection',
+            'reference/sui-wallet-kit/wallet-adapters',
+            'reference/sui-wallet-kit/wallet-kit-core',
+            'reference/sui-wallet-kit/wallet-standard',
+
+          ],
+        },
+      ],
+    },
   ],
   contributeSidebar: [
     {

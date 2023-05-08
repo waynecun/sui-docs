@@ -114,6 +114,11 @@ const config = {
                 docId: "reference/sdk/ts-js-sdk",
                 label: "SDKs",
               },
+              {
+                type: "doc",
+                docId: "reference/sui-wallet-kit/introduction",
+                label: "Sui Wallet Kit",
+              },
             ]
           },
           {
