@@ -53,35 +53,13 @@ const config = {
             label: "Learn",
           },
           {
-            type: "dropdown",
+            type: "doc",
             docId: "build/quickstart/about",
             label: "Build",
-            items: [
-              {
-                type: "doc",
-                docId: "build/quickstart/about",
-                label: "Quickstart",
-              },
-              {
-                type: "doc",
-                docId: "build/setup/connect-to-a-network",
-                label: "Envrionment setup",
-              },
-              {
-                type: "doc",
-                docId: "build/create-smart-contracts/write-move-packages",
-                label: "Smart Contracts with Move",
-              },
-              {
-                type: "doc",
-                docId: "build/program-with-objects/object-basics",
-                label: "Program with Objects",
-              },
-            ]
           },
           {
-            type: "dropdown",
-            docId: "Reference",
+            type: "doc",
+            docId: "reference/sui-framework/sui-framework-reference",
             label: "Reference",
             items: [
               {
@@ -127,21 +105,9 @@ const config = {
             ]
           },
           {
-            type: "dropdown",
-            docId: "contribute/improve-documentation",
+            type: "doc",
+            docId: "contribute/contribution-process",
             label: "Contribute",
-            items: [
-              {
-                type: "doc",
-                docId: "contribute/improve-documentation",
-                label: "Improve Documentation",
-              },
-              {
-                type: "doc",
-                docId: "contribute/nodes/full-node",
-                label: "Run a node on Sui",
-              },
-            ]
           },
         ],
       },
@@ -209,8 +175,9 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Sui`,
+        copyright: `© ${new Date().getFullYear()} Sui Foundation | Documentation distributed under <a href="https://github.com/sui-foundation/sui-docs/blob/main/LICENSE">CC BY 4.0</a>`
       },
+      
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
