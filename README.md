@@ -1,41 +1,19 @@
-# Website
+## Overview
 
-This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
+This repository contains the assets required to build the [Sui documentation](https://docs.sui.io).
 
-### Installation
+## Contributing
 
-```
-$ yarn
-```
+We're glad that you want to contribute!
 
-### Local Development
+- Contributing guideline (hyperlink)
+- Style guide (hyperlink)
+- Localization (hyperlink)
 
-```
-$ yarn start
-```
+## [Contributors](https://github.com/sui-foundation/sui-docs/graphs/contributors)
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+## [Code of conduct](https://docs.sui.io/contribute/code-of-conduct)
 
-### Build
+## License
 
-```
-$ yarn build
-```
-
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
-
-### Deployment
-
-Using SSH:
-
-```
-$ USE_SSH=true yarn deploy
-```
-
-Not using SSH:
-
-```
-$ GIT_USER=<Your GitHub username> yarn deploy
-```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+The Sui Documentation is distributed under the <a href="https://github.com/sui-foundation/sui-docs/blob/main/LICENSE">CC BY 4.0</a> license
