@@ -99,7 +99,7 @@ const config = {
               },
               {
                 type: "doc",
-                docId: "reference/deepbook/pools",
+                docId: "reference/deepbook/design",
                 label: "DeepBook",
               },
             ]
