@@ -20,7 +20,6 @@ const sidebars = {
           type: 'link',
           label: 'Sui Core Concepts',
           href: '/objects',
-          href: '/objects',
         },
         {
           type: 'link',
@@ -75,8 +74,6 @@ const sidebars = {
           items: [
             'build/setup/cli/install-sui',
             'build/setup/cli/client-cli',
-            'build/setup/cli/install-sui',
-            'build/setup/cli/client-cli',
           ],
         },
       ],
@@ -120,9 +117,6 @@ const sidebars = {
         'reference/sui-framework/sui-framework-reference',
         'reference/sui-framework/exchange-integration-guide',
         'reference/sui-framework/sui-bridging',
-        'reference/sui-framework/sui-security',
-        'reference/sui-framework/sui-compared',
-        'reference/sui-framework/sui-glossary',
         'reference/sui-framework/sui-security',
         'reference/sui-framework/sui-compared',
         'reference/sui-framework/sui-glossary',
@@ -175,7 +169,6 @@ const sidebars = {
         'reference/cryptography/hashing',
         'reference/cryptography/groth16',
         'reference/cryptography/ecvrf',
-
       ],
     },
     {
