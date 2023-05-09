@@ -12,8 +12,25 @@ const config = {
   onBrokenLinks: "warn",
   onBrokenMarkdownLinks: "warn",
   i18n: {
-    defaultLocale: "en",
-    locales: ["en"],
+    defaultLocale: 'en',
+    locales: ['en', 'zh'],
+    path: 'i18n',
+    localeConfigs: {
+      en: {
+        label: 'English',
+        direction: 'ltr',
+        htmlLang: 'en-US',
+        calendar: 'gregory',
+        path: 'en',
+      },
+      zh: {
+        label: '中文',
+        direction: 'ltr',
+        htmlLang: 'zh',
+        calendar: 'gregory',
+        path: 'zh',
+      },
+    },
   },
 
   presets: [
@@ -116,11 +133,6 @@ const config = {
                 type: "doc",
                 docId: "reference/sui-wallet-kit/introduction",
                 label: "Sui Wallet Kit",
-              },
-              {
-                type: "doc",
-                docId: "reference/deepbook/pools",
-                label: "DeepBook",
               },
             ]
           },
