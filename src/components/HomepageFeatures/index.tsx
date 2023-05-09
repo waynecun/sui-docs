@@ -52,4 +52,6 @@ export default function HomepageFeatures(): JSX.Element {
       </div>
     </section>
   );
+
+  
 }
