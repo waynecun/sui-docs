@@ -54,7 +54,6 @@ const config = {
           },
           {
             type: "dropdown",
-            docId: "build/quickstart/about",
             label: "Build",
             items: [
               {
@@ -65,11 +64,11 @@ const config = {
               {
                 type: "doc",
                 docId: "build/setup/connect-to-a-network",
-                label: "Envrionment setup",
+                label: "Environment Setup",
               },
               {
                 type: "doc",
-                docId: "build/create-smart-contracts/write-move-packages",
+                docId: "build/create-smart-contracts/smart-contracts",
                 label: "Smart Contracts with Move",
               },
               {
@@ -81,7 +80,6 @@ const config = {
           },
           {
             type: "dropdown",
-            docId: "Reference",
             label: "Reference",
             items: [
               {
@@ -114,11 +112,15 @@ const config = {
                 docId: "reference/sdk/ts-js-sdk",
                 label: "SDKs",
               },
+              {
+                type: "doc",
+                docId: "reference/sui-wallet-kit/introduction",
+                label: "Sui Wallet Kit",
+              },
             ]
           },
           {
             type: "dropdown",
-            docId: "contribute/improve-documentation",
             label: "Contribute",
             items: [
               {
@@ -199,8 +201,9 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Sui`,
+        copyright: `© ${new Date().getFullYear()} Sui Foundation | Documentation distributed under <a href="https://github.com/sui-foundation/sui-docs/blob/main/LICENSE">CC BY 4.0</a>`
       },
+      
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
