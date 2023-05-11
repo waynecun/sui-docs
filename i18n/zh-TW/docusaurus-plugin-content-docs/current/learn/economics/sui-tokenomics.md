@@ -25,4 +25,4 @@ The Sui economy has five core components:
 
 Throughout, use the visual representation in the following figure to aid the discussion.
 
-![Sui tokenomics flow](../../../static/img/sui-tokenomics-flow.png "See staking and tokenomics in Sui") _Visualize staking and tokenomics in Sui_
+![Sui tokenomics flow](/img/sui-tokenomics-flow.png "See staking and tokenomics in Sui") _Visualize staking and tokenomics in Sui_
