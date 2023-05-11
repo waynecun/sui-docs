@@ -10,10 +10,13 @@ We're glad that you want to contribute!
 - Style guide (hyperlink)
 - Localization (hyperlink)
 
-## [Contributors](https://github.com/sui-foundation/sui-docs/graphs/contributors)
+## Contributors
+
+- The contributors to this repo can be found [here](https://github.com/sui-foundation/sui-docs/graphs/contributors).
+- This repo was migrated and built from the [Sui monorepo](https://github.com/MystenLabs/sui). Past contributors can be found [here](CONTRIBUTORS.md).
 
 ## [Code of conduct](https://docs.sui.io/contribute/code-of-conduct)
 
 ## License
 
-The Sui Documentation is distributed under the <a href="https://github.com/sui-foundation/sui-docs/blob/main/LICENSE">CC BY 4.0</a> license
+The Sui Documentation is distributed under the [LICENSE](CC BY 4.0 license).
