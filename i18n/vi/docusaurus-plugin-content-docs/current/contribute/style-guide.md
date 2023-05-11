@@ -19,7 +19,7 @@ The style guide is a living document and should be updated as new cases or needs
 
 Reference works for making content accessible:
 * [A11Y Style Guide](https://a11y-style-guide.com/style-guide/)
-* [Bitsofcode Accessibility Cheatsheet](https://bitsofco.de/the-accessibility-cheatsheet/)
+* [Bitsofcode Accessibility Cheatsheet](https://bitsofco.de/the-accessibility-cheatsheet/) 
 * [Atlassian Design System - Inclusive writing reference](https://atlassian.design/content/inclusive-writing)
 * [MailChimp’s writing style guide](https://styleguide.mailchimp.com/writing-for-accessibility/)
 * [Microsoft Style Guide Accessibility Terms](https://learn.microsoft.com/en-us/style-guide/a-z-word-list-term-collections/term-collections/accessibility-terms)
@@ -41,7 +41,8 @@ An image is not a substitute for text; images should only supplement text. Do no
 Spell out a term or phrase on first use in a topic, followed by the acronym in parentheses. Then use the acronym for subsequent mentions.
 
 **Example**
-> You can mint non-fungible tokens (NFTs) using your Sui Wallet. To view an NFT after you mint it, click the NFTs tab of your wallet.
+
+>You can mint non-fungible tokens (NFTs) using your Sui Wallet. To view an NFT after you mint it, click the NFTs tab of your wallet.
 
 
 ## Alerts, notes, callouts
@@ -79,7 +80,7 @@ Use Warning when the information could cause the user to lose data or to start o
 
 **Example**
 > Warning: Backup your configuration files before you delete your network.
-
+ 
 **Markdown**
 ```
 **Warning:** Backup your configuration files before you delete your network.
@@ -125,7 +126,7 @@ For title capitalization, follow these guidelines:
 Use inline code in a sentence to refer to functions and other code pieces. Use codeblocks to show larger sections of a program. All code should be written exactly as it appears in a code editor, so that other people can copy and paste it from documentation directly into a code editor. Do not use images to show code.
 
 ### Inline code
-Use backticks (`) around individual code within a sentence, which will format it as code in markdown. Do not use quotes, emphasis, or any other formatting to distinguish code from surrounding text.
+Use backticks (\`) around individual code within a sentence, which will format it as code in markdown. Do not use quotes, emphasis, or any other formatting to distinguish code from surrounding text.
 
 **Example**
 
@@ -139,7 +140,7 @@ The `display::new<T>` call creates a `Display`.
 ### Codeblocks
 Use the text before a codeblock to describe what the codeblock does. Use text after the codeblock to point out particular elements in the code and how they work. Do not use codeblocks as a substitute for descriptive text. Codeblocks help readers understand descriptive text in the documentation.
 
-Column One Column Two Column Three Column Four Metric name 10 X Text string.
+Initiate a codeblock in markdown with three backticks (\`\`\`).
 
 **Example**
 ```
@@ -152,14 +153,14 @@ values: vector`<String>`
 ) { /* ... \*/ }
 ```
 
-
+    
 ## Grammar
 
 ### Active voice
 Use Active voice whenever possible. Active voice is direct, clear, and uses fewer words. Passive voice is often less clear, awkward, and uses more words.
 
 **Example**
-
+    
 > **Active:** She installed the software.
 
 > **Passive:** The software was installed by her.
@@ -176,7 +177,7 @@ There are three grammatical moods:
 #### Verb moods
 Use indicative verbs most of the time in conceptual content.
 
-Reference Style Guides Write the Docs Style Guide article GitLab Style Guide - managed as a community project Digital Ocean Style Guide SUSE Style Guide Microsoft Style Guide Google Developer Style Guide CDN Language and Style Reference
+Use imperative verbs for tasks, procedures, and instructions.
 
 **Example**
 
@@ -195,21 +196,22 @@ Use second person in most cases.
 
 ### Present tense
 Use present tense whenever possible. Use future tense (something will happen) only for events that occur on a future date, such as a product release or trade show.
-
+    
 Do not use future tense when describing a product, or providing guidance in tasks. From the user perspective, it is the present for them when they follow the steps in a task. Consider the example of saving a file.
-
+    
 **Example present tense**
 > Click Save to save the updated file.
 
 > When you click Save, your device writes the changes to disk.
-> To save a file after you modify it, click Save.
+
+>To save a file after you modify it, click Save.
 
 **Example future tense**
 
 > Your changes will be saved when you click Save.
 
 While this is technically accurate, it separates the person from the object of the action. This makes it more difficult to parse the sentence for ESL speakers, and is harder to localize.
-
+    
 > When you click Save, the file will be written to disk.
 
 In this example, when will the file be written to disk? It happens immediately upon clicking Save. If you check the timestamp on the file, the time reflects the moment at which you clicked Save, not a time after that moment.
@@ -236,7 +238,7 @@ Use enough words in headings and titles to make it easy to know which link to cl
 Users search for information to complete a specific task, so help them identify the topic that helps them by using descriptive titles. For example, _Get Started_. Get started with what? If there are multiple products or programs available it could be anything.
 
 _Get Started with Sui_ is better, but users want to get started with a specific task or user journey with Sui. Instead of _Get Started with Sui_, describe the specific task or journey, such as _Create a Sui Full Node_ or _Sui Validator Guide_. Use Get Started as a heading on the Documentation landing page to categorize tasks for new users.
-
+    
 **Example**
 > This is a Topic Title
 
@@ -249,14 +251,15 @@ _Get Started with Sui_ is better, but users want to get started with a specific 
 Use sentence casing for section headers.
 
 **Example**
-> This is a section heading
+
+>This is a section heading
 
 **Markdown**
 ```
 ## This is a section heading
 ```
-
-## title: This is a Topic Title
+    
+## Images / Graphics
 Only use images and screenshots to supplement and help explain text. Images do not replace text. Readers should be able to understand the documentation without the images. However, images can help readers understand the text more clearly.
 
 ### Image format
@@ -266,7 +269,8 @@ Use .png when possible, otherwise use .jpg
 Images should be at least 400 pixels wide. If an image looks blurry when uploaded, try making a new image in higher resolution.
 
 ### Captions
-Use alt text to describe what the image shows. Use the caption to explain why the image is meaningful in the context of the page. See Accessibility considerations for captions.
+Use alt text to describe what the image shows. Use the caption to explain why the image is meaningful in the context of the page.
+See Accessibility considerations for captions.
 
 ### Mermaid for images in Markdown
 You can create flowcharts and similar images directly in Markdown.
@@ -279,11 +283,11 @@ Use [Snagit](https://www.techsmith.com/screen-capture.html) or other tools to ca
 Use a list for a series of items or steps instead of writing them as a sentence. Introduce the list with a description of the list elements ending in a colon (:).
 
 **Instead of:**
-
+    
 The Build section of the documentation includes topics about: Building with Sui, Using the CLI to Start a Network, Creating Smart Contracts, Sui Tutorial, and Sui Examples.
 
 **Use:**
-
+    
 The Build section of the documentation includes the following topics:
 * Building with Sui
 * Using the CLI to Start a Network
@@ -311,7 +315,8 @@ Use a numbered list when:
 ### Bulleted lists
 Use bulleted lists to list more than two pieces of related information, such as links or terms, that don’t need to be in a specific order. Optionally, use a bulleted list for only two items to include a description of the items in the list. Use sentence capitalization in lists, and use punctuation consistently for all list items. Do not use an ending period unless the list item includes a full sentence.
 
-**Example** See the following articles to learn more:
+**Example**
+See the following articles to learn more:
 * Link to article1
 * Link to article2
 
@@ -319,17 +324,17 @@ Sui Explorer supports the following browsers:
 * Firefox version X or later
 * Chrome version X or later
 * Edge version X or later
-
+   
 SUi offers the following benefits:
 * **Benefit A-** Description of Benefit A of Sui.
 * **Benefit B-** Description of Benefit B of Sui.
-
+   
 **Markdown**
 ```
 * **Benefit A** - Description of Benefit A of Sui.
 * **Benefit B** - Description of Benefit B of Sui.
 ```
-
+    
 ### Term list
 Use a term list to define terms or concepts.
 
@@ -337,7 +342,7 @@ Use a term list to define terms or concepts.
 > **Term:** A description of the term.
 
 > **DAG:** A directed acyclic graph (DAG) is a data modeling or structuring tool typically used in data architectures.
-
+  
 **Markdown**
 ```
 **Term:** A description of the term.
@@ -365,7 +370,7 @@ Use initial / sentence capitalization in list items.
 1. First list item
 1. Second list item
 ```
-
+    
 ## Numbers
 ### Numerals vs. words
 Write out numbers less than 10
@@ -382,47 +387,50 @@ In body text, use numbers consistently if using both numbers less than and great
 
 **Example**
 > One folder contains 7 files, and the other contains 24 files.
-
+    
 For ease of reading, use both words and numbers when you use two numbers for different things together.
-
+    
 **Example**
 > The folder contains twenty 12-page documents.
-
+    
 Don’t start a sentence with a numeral. Instead, add a qualifier or spell out the number.
-
+    
 **Example**
 > At least 20 pieces of candy fell off the table.
-> Twenty pieces of candy melted.
 
+>Twenty pieces of candy melted.
+    
 Measurements should be written as numerals.
-
+    
 **Example**
 > The server processes 2 terabytes of data in 8 milliseconds.
 
 ## Links
 Use the topic title of the target topic as the link text for the link in a list or "Learn more" sentences. Do not use a URL as the link text.
-
+    
 **Example**
 > To learn more, see [Examples of Sui Smart Contracts](https://docs.sui.io/explore/examples).
-
+    
 **Markdown**
 ```
 To learn more, see [Examples of Sui Smart Contracts](https://docs.sui.io/explore/examples).
 ```
-
+    
 Use keywords from the target topic title when using links inline.
-
-**Example** Before you install Sui, make sure to install the [prerequisites](https://docs.sui.io/build/install#prerequisites).
-
+    
+**Example**
+Before you install Sui, make sure to install the [prerequisites](https://docs.sui.io/build/install#prerequisites).
+    
 **Markdown**
 ```
 Before you install Sui, make sure to install the [prerequisites](https://docs.sui.io/build/install#prerequisites).
 ```
-
+    
 ## Procedures / Tasks / Instructions
 Introduce a procedure with an infinitive verb. Format procedures using a numbered or ordered list.
-
-**Example** To get the latest version of the Sui Wallet extension:
+    
+**Example**
+To get the latest version of the Sui Wallet extension:
 
 1. Open Google Chrome.
 1. Click **Extensions**, then click **Manage Extensions**.
@@ -450,7 +458,7 @@ Proper nouns include:
 * Trademarks, such as Coca-Cola
 * Book titles, such as The Move Book
 * Standards or technologies, such as Local Area Network (LAN)
-
+    
 **Example**
 > Sui Explorer
 
@@ -466,7 +474,7 @@ Product names are proper nouns. Capitalize all words of a product name. When ref
 * Sui Wallet
 * Ethos Wallet
 * Coinbase Wallet
-
+    
 **Example**
 > Sui Explorer
 
@@ -476,59 +484,59 @@ Product names are proper nouns. Capitalize all words of a product name. When ref
 > You can mint an NFT directly from your Sui Wallet.
 
 > Find transaction details in Sui Explorer.
-
+    
 > After you complete a transaction in your Sui Wallet, view details about the transaction on Sui Explorer.
 
 ## Slashes
 Avoid using slashes in place of "and" or "or", such as True / False or True/False. Use True or False, or True | False in code documentation.
 
 If you do use a slash, include a space between the term and slash.
-
+    
 When using fractions, use no spaces, for example 3/4.
 
 ## Spelling
 Use US English spelling in source content.
 
 ## Tables
-
+    
 ### Table headings
 Capitalize the first word in the heading. Center align the text. Bold labels in the Header row.
-
+    
 **Example**
 
 | **Column one** | **Column two** | **Column three** | **Column four** |
-|:-------------- |:--------------:|:----------------:|:--------------- |
-| Metric name    |       10       |        X         | Text string.    |
+|:-----|:-----:|:-----:|:-----|
+| Metric name | 10 | X | Text string. |
 
 **Markdown**
 ```    
 | **Column one** | **Column two** | **Column three** | **Column four** |
 ```
-
+    
 ### Table alignment
 Center align labels in the Heading row. Left align strings of text. Center align values and Xs or checkmarks.
-
+    
 **Example**
 
 | **Column one** | **Column two** | **Column three** | **Column four** |
-|:-------------- |:--------------:|:----------------:|:--------------- |
-| Metric name    |       10       |        X         | Text string.    |
-
+|:-----|:-----:|:-----:|:-----|
+| Metric name | 10 | X | Text string. |
+    
 **Markdown**
 ```
 | **Column one** | **Column two** | **Column three** | **Column four** |
 | :--- | :---: | :---: | :--- |
 ```
-
+    
 ### Table text
 Follow style guidelines for regular body text.
 
 ## UI elements
-Format UI elements, such as field labels, button names, and menu commands, in bold text. Always match the exact text or label of the UI element, including capitalization. Do not include special characters, such as ellipses, if included in the element label.
-
+Format UI elements, such as field labels, button names, and menu commands, in bold text. Always match the exact text or label of the UI element, including capitalization. Do not include special characters, such as ellipses, if included in the element label. 
+    
 **Example**
 > To open a different file, click File > Open FIle.
-
+    
 **Example**
 > Click **More Transactions** to open the **Transactions** page.
 
@@ -536,21 +544,21 @@ Format UI elements, such as field labels, button names, and menu commands, in bo
 Add text and create a link to a site or URL. Provide the URL only when a reader needs to copy it, such as in example code or configuration files.
 
 ## Word choice
-
+    
 ### Referring to pages in our docs
 Refer to pages in the documentation set as “topic”s. A “guide” can comprise many related topics.
-
+    
 **Example**
 > See the Install topic in the Validator guide for more information.
-
+    
 **Note:** You can also just refer to a topic by title where it makes sense. See Installing Sui for more information.
-
+    
 ### General considerations
 * Use simple words, concise sentences
 * Don't use common words in new ways
 * Use technical terms carefully
 * Avoid jargon
-
+    
 ### Contractions
 Optionally use contractions to provide a more conversational tone. It’s OK to use them inconsistently. Be mindful that they can be confusing to non-native speakers.
 
@@ -558,11 +566,12 @@ Optionally use contractions to provide a more conversational tone. It’s OK to 
 Describe the section.
 ### Subsection or category (Heading 3)
 Describe the additional entry.
-
+    
 **Example**
 > Indented example for the section. (Normal text, indented)
-
-**Markdown** Indented example for the section. (Roboto Mono Light)
+    
+**Markdown**
+Indented example for the section. (Roboto Mono Light)
 
 ## Reference Style Guides {#reference-style-guides}
 
