@@ -12,7 +12,7 @@ This document defines the styles, word and term usage, and content formatting fo
 
 ## Contribute to the style guide
 
-The style guide is a living document and should be updated as new cases or needs arise. To suggest updates to the style guide, please contact Wayne Cunningham, Sui Foundation Staff Technical Content Manager.
+The style guide is a living document and should be updated as new cases or needs arise. To suggest updates to the style guide, please contact [Wayne Cunningham](mailto:wayne@sui.io?subject=Sui Style Guide Update), Sui Foundation Staff Technical Content Manager.
 
 
 ## Accessibility
