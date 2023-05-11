@@ -347,7 +347,8 @@ Array [
 
 Go to the Sui Explorer to observe a newly created object. You should see a sword object created with `Magic` property of `42` and `Strength` property of `7` and transferred to the new owner.
 
-<img src={require('@site/static/img/build-explorer-object.png').default} alt="Object view in Sui Explorer" />
+![Object view in Sui Explorer](/img/build-explorer-object.png)
+_Explorer view of example sword object_
 
 To see your object in the current [Sui Explorer](https://suiexplorer.com/), paste the object ID of the created object you observed in your own command output in the search field and press **Enter**. If your Sui Explorer doesn't find your object, make sure it's pointing to the right network.
 

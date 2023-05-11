@@ -135,8 +135,6 @@ Inline code Use backticks (`) around individual code within a sentence, which wi
 ```
 \_Example The <code>display::new<T></code> call creates a Display.
 ```
- call creates a Display.
-</code>
 
 ### Codeblocks
 Codeblocks Use the text before a codeblock to describe what the codeblock does. Use text after the codeblock to point out particular elements in the code and how they work. Do not use codeblocks as a substitute for descriptive text. Codeblocks help readers understand descriptive text in the documentation.
