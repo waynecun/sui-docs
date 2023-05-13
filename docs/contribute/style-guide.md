@@ -9,12 +9,6 @@ Version .1 Published 2023-05-04
 
 This document defines the styles, word and term usage, and content formatting for Sui documentation. Entries are in alphabetical order. A style guide is never finished. Expect continued iterations to add additional styles, additional information to existing styles, and infrequently a change to an existing style.
 
-
-## Contribute to the style guide
-
-The style guide is a living document and should be updated as new cases or needs arise. To suggest updates to the style guide, please contact the Sui Foundation using this address: author@sui.io.
-
-
 ## Accessibility
 
 Reference works for making content accessible:
