@@ -3,9 +3,8 @@ title: Style Guide
 slug: /style-guide
 ---
 
-# Sui Foundation | Sui Docs Content Style Guide
+# Sui Foundation | Sui Docs Style Guide
 
-Version .1 Published 2023-05-04
 
 This document defines the styles, word and term usage, and content formatting for Sui documentation. Entries are in alphabetical order. A style guide is never finished. Expect continued iterations to add additional styles, additional information to existing styles, and infrequently a change to an existing style.
 
