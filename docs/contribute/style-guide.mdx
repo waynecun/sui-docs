@@ -46,7 +46,11 @@ Alerts add emphasis to information. Use Admonitions, a Docusaurus feature, to in
 
 Use Note to add emphasis to information that the reader should know, but could be overlooked when scanning a topic or document. Provide information that prevents users from getting stuck.
 
-**Example**
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<Tabs>
+<TabItem value="example" label="Example" default>
 
 :::note
 
@@ -54,7 +58,8 @@ The system processes updates only once every 24 hours at UTC 00:00.
 
 :::
 
-**Markdown**
+</TabItem>
+<TabItem value="markdown" label="Markdown">
 
 ```
 :::note
@@ -62,13 +67,19 @@ The system processes updates only once every 24 hours at UTC 00:00.
 The system processes updates only once every 24 hours at UTC 00:00.
 
 :::
+
 ```
+
+</TabItem>
+</Tabs>
+
 
 ### Tip
 
 Use Tip to give the reader advice that might be helpful, such as a best practice.
 
-**Example**
+<Tabs>
+<TabItem value="example" label="Example" default>
 
 :::tip
 
@@ -76,21 +87,29 @@ Change your home directory after installing the IDE.
 
 :::
 
-**Markdown**
+</TabItem>
+<TabItem value="markdown" label="Markdown">
 
 ```
+
 :::tip
 
 Change your home directory after installing the IDE.
 
 :::
+
 ```
+
+</TabItem>
+</Tabs>
+
 
 ### Caution
 
 Use Caution when the information could cause the user to lose data or to start over. If you instruct a user to delete something, warn them about what happens when they delete it.
 
-**Example**
+<Tabs>
+<TabItem value="example" label="Example" default>
 
 :::caution
 
@@ -98,7 +117,8 @@ Backup your configuration files before you delete your network.
 
 :::
 
-**Markdown**
+</TabItem>
+<TabItem value="markdown" label="Markdown">
 
 ```
 
@@ -107,7 +127,12 @@ Backup your configuration files before you delete your network.
 Backup your configuration files before you delete your network.
 
 :::
+
 ```
+
+</TabItem>
+</Tabs>
+
 
 ## Capitalization
 
@@ -153,15 +178,23 @@ Use inline code in a sentence to refer to functions and other code pieces. Use c
 
 Use backticks (\`) around individual code within a sentence, which will format it as code in markdown. Do not use quotes, emphasis, or any other formatting to distinguish code from surrounding text.
 
-**Example**
+<Tabs>
+<TabItem value="example" label="Example" default>
 
 > The `display::new<T>` call creates a `Display`.
 
-**Markdown**
+</TabItem>
+<TabItem value="markdown" label="Markdown">
 
 ```
+
 The `display::new<T>` call creates a `Display`.
+
 ```
+
+</TabItem>
+</Tabs>
+
 
 ### Codeblocks
 
@@ -281,29 +314,45 @@ Users search for information to complete a specific task, so help them identify 
 
 _Get Started with Sui_ is better, but users want to get started with a specific task or user journey with Sui. Instead of _Get Started with Sui_, describe the specific task or journey, such as _Create a Sui Full Node_ or _Sui Validator Guide_. Use Get Started as a heading on the Documentation landing page to categorize tasks for new users.
 
-**Example**
+<Tabs>
+<TabItem value="example" label="Example" default>
 
 > This is a Topic Title
 
-**Markdown**
+</TabItem>
+<TabItem value="markdown" label="Markdown">
 
 ```
+
 ## title: This is a Topic Title
+
 ```
+
+</TabItem>
+</Tabs>
+
 
 ### Section headings
 
 Use sentence casing for section headers.
 
-**Example**
+<Tabs>
+<TabItem value="example" label="Example" default>
 
 > This is a section heading
 
-**Markdown**
+</TabItem>
+<TabItem value="markdown" label="Markdown">
 
 ```
+
 ## This is a section heading
+
 ```
+
+</TabItem>
+</Tabs>
+
 
 ## Images / Graphics
 
@@ -355,29 +404,34 @@ Use a numbered list when:
 - the items in the list must be performed in a specific order, such as the steps in a task
 - the items in the list describe a sequence of events, such as a workflow or scenario
 
-**Example**
+<Tabs>
+<TabItem value="example" label="Example" default>
 
 1. Create a fork of the repo.
 1. Clone your fork of the repo.
 1. Install Sui.
 
-**Markdown**
+</TabItem>
+<TabItem value="markdown" label="Markdown">
 
 ```
+
 1. Create a fork of the repo.
 1. Clone your fork of the repo.
 1. Install Sui.
+
 ```
+
+</TabItem>
+</Tabs>
+
 
 ### Bulleted lists
 
 Use bulleted lists to list more than two pieces of related information, such as links or terms, that don’t need to be in a specific order. Optionally, use a bulleted list for only two items to include a description of the items in the list. Use sentence capitalization in lists, and use punctuation consistently for all list items. Do not use an ending period unless the list item includes a full sentence.
 
-**Example**
-See the following articles to learn more:
-
-- Link to article1
-- Link to article2
+<Tabs>
+<TabItem value="example" label="Example" default>
 
 Sui Explorer supports the following browsers:
 
@@ -385,62 +439,93 @@ Sui Explorer supports the following browsers:
 - Chrome version X or later
 - Edge version X or later
 
-SUi offers the following benefits:
-
-- **Benefit A-** Description of Benefit A of Sui.
-- **Benefit B-** Description of Benefit B of Sui.
-
-**Markdown**
+</TabItem>
+<TabItem value="markdown" label="Markdown">
 
 ```
-* **Benefit A** - Description of Benefit A of Sui.
-* **Benefit B** - Description of Benefit B of Sui.
+
+Sui Explorer supports the following browsers:
+
+- Firefox version X or later
+- Chrome version X or later
+- Edge version X or later
+
 ```
+
+</TabItem>
+</Tabs>
+
 
 ### Term list
 
 Use a term list to define terms or concepts.
 
-**Example**
+<Tabs>
+<TabItem value="example" label="Example" default>
 
 > **Term:** A description of the term.
 
 > **DAG:** A directed acyclic graph (DAG) is a data modeling or structuring tool typically used in data architectures.
 
-**Markdown**
+
+</TabItem>
+<TabItem value="markdown" label="Markdown">
 
 ```
+
 **Term:** A description of the term.
 **DAG:** A directed acyclic graph (DAG) is a data modeling or structuring tool typically used in cryptocurrencies.
+
 ```
+
+</TabItem>
+</Tabs>
+
 
 ### Capitalization in lists
 
 Use initial / sentence capitalization in list items.
 
-**Example - bulleted list**
+<Tabs>
+<TabItem value="example" label="Example - bulleted lists" default>
 
 - First list item
 - Second list item
 
-**Markdown**
+
+</TabItem>
+<TabItem value="markdown" label="Markdown">
 
 ```
+
 * First list item
 * Second list item
+  
 ```
 
-**Example - numbered list**
+</TabItem>
+</Tabs>
 
-1. First list item
-2. Second list item
+<Tabs>
+<TabItem value="example" label="Example - numbered lists" default>
 
-**Markdown**
-
-```
 1. First list item
 1. Second list item
+
+
+</TabItem>
+<TabItem value="markdown" label="Markdown">
+
 ```
+
+1. First list item
+1. Second list item
+  
+```
+
+</TabItem>
+</Tabs>
+
 
 ## Numbers
 
@@ -488,48 +573,74 @@ Measurements should be written as numerals.
 
 Use the topic title of the target topic as the link text for the link in a list or "Learn more" sentences. Do not use a URL as the link text.
 
-**Example**
+<Tabs>
+<TabItem value="example" label="Example" default>
 
 > To learn more, see [Examples of Sui Smart Contracts](https://docs.sui.io/explore/examples).
 
-**Markdown**
+</TabItem>
+<TabItem value="markdown" label="Markdown">
 
 ```
+
 To learn more, see [Examples of Sui Smart Contracts](https://docs.sui.io/explore/examples).
+  
 ```
+
+</TabItem>
+</Tabs>
+
 
 Use keywords from the target topic title when using links inline.
 
-**Example**
-Before you install Sui, make sure to install the [prerequisites](https://docs.sui.io/build/install#prerequisites).
+<Tabs>
+<TabItem value="example" label="Example" default>
 
-**Markdown**
+> Before you install Sui, make sure to install the [prerequisites](https://docs.sui.io/build/install#prerequisites).
+
+</TabItem>
+<TabItem value="markdown" label="Markdown">
 
 ```
+
 Before you install Sui, make sure to install the [prerequisites](https://docs.sui.io/build/install#prerequisites).
+  
 ```
+
+</TabItem>
+</Tabs>
+
 
 ## Procedures / Tasks / Instructions
 
 Introduce a procedure with an infinitive verb. Format procedures using a numbered or ordered list.
 
-**Example**
+<Tabs>
+<TabItem value="example" label="Example" default>
+
+To get the latest version of the Sui Wallet extension:
+
+1. Open Google Chrome.
+1. Click **Extensions**, then click **Manage Extensions**.
+1. Click **Details** for the Sui Wallet extension, then click **View in Chrome Web Store**.
+  
+</TabItem>
+<TabItem value="markdown" label="Markdown">
+
+```
+
 To get the latest version of the Sui Wallet extension:
 
 1. Open Google Chrome.
 1. Click **Extensions**, then click **Manage Extensions**.
 1. Click **Details** for the Sui Wallet extension, then click **View in Chrome Web Store**.
 
-**Markdown**
-
-```
-To get the latest version of the Sui Wallet extension:
-
-1. Open Google Chrome.
-1. Click **Extensions**, then click **Manage Extensions**.
-1. Click **Details** for the Sui Wallet extension, then click **View in Chrome Web Store**.
 ```
 
+</TabItem>
+</Tabs>
+
+  
 ### Keyboard keys in procedures
 
 When you provide instructions to press keyboard keys, such as Press **Enter** to continue, use uppercase for the key name and format the key name as bold text.
@@ -599,34 +710,50 @@ Use US English spelling in source content.
 
 Capitalize the first word in the heading. Center align the text. Bold labels in the Header row.
 
-**Example**
+<Tabs>
+<TabItem value="example" label="Example" default>
 
 | **Column one** | **Column two** | **Column three** | **Column four** |
 | :------------- | :------------: | :--------------: | :-------------- |
 | Metric name    |       10       |        X         | Text string.    |
-
-**Markdown**
+  
+</TabItem>
+<TabItem value="markdown" label="Markdown">
 
 ```
+
 | **Column one** | **Column two** | **Column three** | **Column four** |
+
 ```
+
+</TabItem>
+</Tabs>
+
 
 ### Table alignment
 
 Center align labels in the Heading row. Left align strings of text. Center align values and Xs or checkmarks.
 
-**Example**
+<Tabs>
+<TabItem value="example" label="Example" default>
 
 | **Column one** | **Column two** | **Column three** | **Column four** |
 | :------------- | :------------: | :--------------: | :-------------- |
 | Metric name    |       10       |        X         | Text string.    |
-
-**Markdown**
+  
+</TabItem>
+<TabItem value="markdown" label="Markdown">
 
 ```
+
 | **Column one** | **Column two** | **Column three** | **Column four** |
 | :--- | :---: | :---: | :--- |
+
 ```
+
+</TabItem>
+</Tabs>
+
 
 ### Table text
 
@@ -683,12 +810,23 @@ Describe the section.
 
 Describe the additional entry.
 
-**Example**
+<Tabs>
+<TabItem value="example" label="Example" default>
 
 > Indented example for the section. (Normal text, indented)
+  
+</TabItem>
+<TabItem value="markdown" label="Markdown">
 
-**Markdown**
+```
+
 Indented example for the section. (Roboto Mono Light)
+
+```
+
+</TabItem>
+</Tabs>
+  
 
 ## Reference Style Guides {#reference-style-guides}
 
