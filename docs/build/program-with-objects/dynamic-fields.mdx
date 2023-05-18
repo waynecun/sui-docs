@@ -6,8 +6,8 @@ slug: /dynamic-fields
 Previous chapters describe various ways to use object fields to store primitive data and other objects (wrapping), but there are a few limitations to this approach:
 
 1. Object's have a finite set of fields keyed by identifiers that are fixed when its module is published (i.e. limited to the fields in the `struct` declaration).
-2. An object can become very large if it wraps several other objects. Larger objects can lead to higher gas fees in transactions. In addition, there is an upper bound on object size.
-3. Later chapters include use cases where you need to store a collection of objects of heterogeneous types. Since the Sui Move `vector` type must be instantiated with one single type `T`, it is not suitable for this.
+1. An object can become very large if it wraps several other objects. Larger objects can lead to higher gas fees in transactions. In addition, there is an upper bound on object size.
+1. Later chapters include use cases where you need to store a collection of objects of heterogeneous types. Since the Sui Move `vector` type must be instantiated with one single type `T`, it is not suitable for this.
 
 Fortunately, Sui provides _dynamic fields_ with arbitrary names (not just identifiers), added and removed on-the-fly (not fixed at publish), which only affect gas when they are accessed, and can store heterogeneous values. This chapter introduces the libraries for interacting with this kind of field.
 
@@ -80,7 +80,7 @@ public entry fun add_child(parent: &mut Parent, child: Child) {
 This function takes the `Child` object by value and makes it a dynamic field of `parent` with name `b"child"` (a byte string of type `vector<u8>`). This call results in the following ownership relationship:
 
 1. Sender address (still) owns the `Parent` object.
-2. The `Parent` object owns the `Child` object, and can refer to it by the name `b"child"`.
+1. The `Parent` object owns the `Child` object, and can refer to it by the name `b"child"`.
 
 It is an error to overwrite a field (attempt to add a field with the same Name type and value as one that is already defined), and a transaction that does this will fail. Fields can be modified in-place by borrowing them mutably and can be overwritten safely (such as to change its value type) by removing the old value first.
 
