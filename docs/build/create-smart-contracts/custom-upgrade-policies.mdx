@@ -38,11 +38,11 @@ Package upgrades must occur end-to-end in a single transaction block and are com
 
 1. **Authorization:** Get permission from the `UpgradeCap` to perform
    the upgrade, creating an `UpgradeTicket`.
-2. **Execution:** Consume the `UpgradeTicket` and verify the package
+1. **Execution:** Consume the `UpgradeTicket` and verify the package
    bytecode and compatibility against the previous version, and create
    the on-chain object representing the upgraded package. Return an
    `UpgradeReceipt` as a result on success.
-3. **Commit:** Update the `UpgradeCap` with information about the
+1. **Commit:** Update the `UpgradeCap` with information about the
    newly created package.
 
 While step 2 is a built-in command, steps 1 and 3 are implemented as Move functions. The Sui framework provides their most basic implementation:
